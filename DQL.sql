@@ -25,6 +25,7 @@ HAVING COUNT(*) >= 2;
 SELECT COUNT(*),
     MONTH(OrderDate)
 FROM Orders
+WHERE YEAR=2020;
 GROUP BY MONTH(OrderDate);
 --7/
 SELECT product_name,
